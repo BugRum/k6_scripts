@@ -3,7 +3,7 @@ import { browser } from 'k6/browser';
 export const options = {
   scenarios: {
     ui: {
-      executor: 'shared-iterations',
+      executor: 'shared-iterations  ',
       options: {
         browser: {
           type: 'chromium',
@@ -20,7 +20,7 @@ export default async function () {
   const page = await browser.newPage();
 
   try {
-    await page.goto('https://test.k6.io/');
+    await page.goto('https://myglamm.com/');
     await page.screenshot({ path: 'D:\K6_scripts' });
   } finally {
     await page.close();
