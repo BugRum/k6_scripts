@@ -20,7 +20,7 @@ export default async function () {
   const page = await browser.newPage();
 
   try {
-    await page.goto('https://myglamm.com/');
+    await page.goto('https://myglammm.com/');
     await page.screenshot({ path: 'D:\K6_scripts' });
   } finally {
     await page.close();
